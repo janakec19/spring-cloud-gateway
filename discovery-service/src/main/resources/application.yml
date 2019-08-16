@@ -4,7 +4,7 @@ spring:
 
 eureka:
   instance:
-    hostname: springsteeltoe.gateway.svc    # it should be service url in openshift cluster.
+    hostname: springsteeltoe-gateway.192.168.42.79.nip.io    # it should be service url in openshift cluster.
   client:
     eureka-server-connect-timeout-seconds: 5
     enabled: true
