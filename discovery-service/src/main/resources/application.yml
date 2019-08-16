@@ -3,11 +3,14 @@ spring:
     name: discovery-service
 
 eureka:
+  instance:
+    hostname: springsteeltoe.gateway.svc    # it should be service url in openshift cluster.
   client:
     eureka-server-connect-timeout-seconds: 5
     enabled: true
     fetch-registry: false
     register-with-eureka: false
-
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 server:
   port: 8761
