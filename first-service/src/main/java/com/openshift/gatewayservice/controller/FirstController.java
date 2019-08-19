@@ -1,4 +1,4 @@
-package com.devglan.gatewayservice.controller;
+package com.openshift.gatewayservice.controller;
 
 import org.springframework.web.bind.annotation.*;
 
