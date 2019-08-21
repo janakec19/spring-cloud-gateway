@@ -6,7 +6,7 @@ eureka:
   instance:
     hostname: spring-cloud-gateway.discovery.svc    # it should be service url in openshift cluster.
   client:
-    eureka-server-connect-timeout-seconds: 5
+    eureka-server-connect-timeout-seconds: 15
     enabled: true
     fetch-registry: false
     register-with-eureka: false
