@@ -9,4 +9,4 @@ eureka:
     preferIpAddress: false
   client:
     service-url:
-      defaultZone: http://springsteeltoe.gateway.svc:8761/eureka/
+      defaultZone: http://spring-cloud-gateway.discovery.svc:8761/eureka/
