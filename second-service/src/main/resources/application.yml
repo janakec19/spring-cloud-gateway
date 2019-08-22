@@ -9,4 +9,4 @@ eureka:
     preferIpAddress: false
   client:
     service-url:
-      defaultZone: http://discovery.firstservice.svc:8761
+      defaultZone: http://discovery.firstservice.svc:8761/eureka
