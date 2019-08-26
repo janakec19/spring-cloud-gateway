@@ -1,4 +1,4 @@
-package com.devglan.gatewayservice;
+package com.openshift.gatewayservice;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
