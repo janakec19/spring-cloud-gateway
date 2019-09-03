@@ -1,16 +1,16 @@
 spring:
   application:
     name: discovery-service
-
 eureka:
   instance:
-    hostname: discovery.firstservice.svc    # it should be service url in openshift cluster.
+    hostname: discovery.firstservice.svc
+    nonSecurePortEnabled: true
+    nonSecurePort: 80
+    homePageUrl: http://${eureka.instance.hostname}/
+    statusPageUrl: http://${eureka.instance.hostname}/actuator/info/
+    healthCheckUrl: http://${eureka.instance.hostname}/actuator/health/
   client:
-    eureka-server-connect-timeout-seconds: 15
-    enabled: true
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-server:
-  port: 8761
+      defaultZone: http://${eureka.instance.hostname}/eureka/
