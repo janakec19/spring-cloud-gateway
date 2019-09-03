@@ -1,3 +1,16 @@
+
+~~~
+
+curl -I discovery-service-firstservice.192.168.42.79.nip.io/eureka/apps
+HTTP/1.1 200 
+Content-Type: application/xml
+Transfer-Encoding: chunked
+Date: Tue, 03 Sep 2019 12:38:34 GMT
+Set-Cookie: 57b87239caacc3710c925d905cb86c53=08dd197dfaf4f9c2cea425882e295a70; path=/; HttpOnly
+Cache-control: private
+
+~~~
+
 # spring-cloud-gateway
 
 ~~~~
