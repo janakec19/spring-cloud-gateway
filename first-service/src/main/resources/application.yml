@@ -1,13 +1,12 @@
 spring:
   application:
-    name: second-service
+    name: first-service
 
 eureka:
   instance:
     nonSecurePortEnabled: true
     nonSecurePort: 80
     preferIpAddress: true
-    homePageUrl: http://${eureka.instance.hostname}/
   client:
     service-url:
-      defaultZone: http://discovery.firstservice.svc/eureka/
+      defaultZone: http://discovery-service.firstservice.svc/eureka/
