@@ -1,12 +1,3 @@
 spring:
   application:
     name: first-service
-
-eureka:
-  instance:
-    nonSecurePortEnabled: true
-    nonSecurePort: 80
-    preferIpAddress: true
-  client:
-    service-url:
-      defaultZone: http://discovery-service.firstservice.svc/eureka/
