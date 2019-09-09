@@ -1,18 +1,26 @@
 spring:
   application:
     name: first-service
-  cloud:
-    kubernetes:
-      reload:
-        enabled: true
-        mode: polling
-        period: 5000
-management:
-  endpoint:
-    restart:
-      enabled: true
-    health:
-      enabled: true
-    info:
-      enabled: true
-
+#  cloud:
+#    kubernetes:
+#      reload:
+#        enabled: true
+#        mode: polling
+#        period: 5000
+#management:
+#  endpoint:
+#    restart:
+#      enabled: true
+#    health:
+#      enabled: true
+#    info:
+#      enabled: true
+eureka:
+  instance:
+    nonSecurePortEnabled: true
+    nonSecurePort: 80
+    preferIpAddress: true
+    homePageUrl: http://discovery-service-firstservice.192.168.42.79.nip.io/
+  client:
+    service-url:
+      defaultZone: http://discovery-service-firstservice.192.168.42.79.nip.io/eureka/
