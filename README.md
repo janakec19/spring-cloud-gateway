@@ -1,4 +1,5 @@
 
+https://stackoverflow.com/questions/57589090/spring-client-cannot-register-with-eureka-minishift
 ~~~
 
 curl -I discovery-service-firstservice.192.168.42.79.nip.io/eureka/apps
